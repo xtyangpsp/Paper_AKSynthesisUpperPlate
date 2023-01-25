@@ -1,7 +1,7 @@
 # Synthesis of Alaska seismic models - Continental Lithosphere
 This repository contains the data products from the Alaska synthesis paper on continental lithosphere, including crustal thickness models and velocity structural domains (domain outlines and key velocity cluster boundaries).
 
-Reference of the paper: Yang, X., Fischer, K., Mann, M., Schaeffer, A., Wei, S., Pavlis, G., & Jadamec, M.  (2023). Synthesis of the Seismic Structure of the Greater Alaska Region: Continental Lithosphere. AGU Monograph
+Reference of the paper: Yang, X., Mann, M., Fischer, K., Jadamec, M., Wei, S., Pavlis, G., & Schaeffer, A. (in review). Synthesis of the Seismic Structure of the Greater Alaska Region: Continental Lithosphere. AGU Monograph
 
 ## 1. Data sets
 
