@@ -10,9 +10,10 @@ The folder "summary_supplement_file" contains the summary file "AlaskaSynthesis_
 
 ### 2.1 Crustal thicknesses: this folder contains the average crustal thickness using single station measures and multi-station measurements.
 
-* singlestaMohodepths_final.txt: the average of Moho depths from multiple models that provide single station measurements, including Ai et al. (2005), Rossi et al. (2006), Miller et al. (2018), Zhang et al. (2019), and Mann et al. (2022). Columns: latitude, longitude, depth (km)
-
-* multistaMohodepths_final.txt: the average of Moho depths maps from multiple models that provide the Moho depths at binned grids, including Haney et al. (2020), Mann et al. (2022), and Gama et al. (2022a). Columns: latitude, longitude, depth (km)
+* SingleStation_Mohodepths_final_nouncertainty_.txt: the average of Moho depths from multiple models that provide single station measurements, including Ai et al. (2005), Rossi et al. (2006), Miller et al. (2018), Zhang et al. (2019), and Mann et al. (2022). Columns: latitude, longitude, depth (km)
+* SingleStation_Mohodepths_final_withcertainty_.txt: the average of Moho depths from multiple models with uncertainties considered in averaging. Columns: latitude, longitude, depth (km), std (km)
+* MultiStation_Mohodepths_final_nouncertainty.txt: the average of Moho depths maps from multiple models that provide the Moho depths at binned grids, including Haney et al. (2020), Mann et al. (2022), and Gama et al. (2022a). Columns: latitude, longitude, depth (km)
+* MultiStation_Mohodepths_final_nouncertainty.txt: the average of Moho depths maps from multiple models that provide the Moho depths at binned grids, with uncertainties considered in averaging. Columns: latitude, longitude, depth (km), std (km)
 
 ### 2.2 Products from velocity model clustering analysis.
 
