@@ -1,20 +1,20 @@
 # Synthesis of Alaska seismic models - Continental Lithosphere
 This repository contains the data products from the Alaska synthesis paper on continental lithosphere, including crustal thickness models and velocity structural domains (domain outlines and key velocity cluster boundaries).
 
-Reference of the paper: Yang, X., Mann, M., Fischer, K., Jadamec, M., Wei, S., Pavlis, G., & Schaeffer, A. (in review). Synthesis of the Seismic Structure of the Greater Alaska Region: Continental Lithosphere. AGU Monograph
+Reference of the paper: Yang, X., Mann, M., Fischer, K., Jadamec, M., Wei, S., Pavlis, G., & Schaeffer, A. (2024). Synthesis of the Seismic Structure of the Greater Alaska Region: Continental Lithosphere. in *Tectonics and Seismic Structure of Alaska and Northwestern Canada: EarthScope and Beyond*, Geophysical Monograph 290, First Edition. Edited by Natalia A. Ruppert, Margarete A. Jadamec and Jeffrey T. Freymueller
 
 ## 1. Supplementary information file
 The folder "summary_supplement_file" contains the summary file "AlaskaSynthesis_ContinentalLithosphere_SUPP.pdf" for all supplementary figures and Table S1. Table S1 is included in the summary file and as a separated excel table: "Table-S1_seismicnetworks.xlsx".
 
 ## 2. Data sets/products
 
-### 2.1 Crustal thicknesses: this folder contains the average crustal thickness using single station measures and multi-station measurements.
+### 2.1 crustal_thicknesses: this folder contains the average crustal thickness using single station measures and multi-station measurements.
 
 * singlestaMohodepths_final.txt: the average of Moho depths from multiple models that provide single station measurements, including Ai et al. (2005), Rossi et al. (2006), Miller et al. (2018), Zhang et al. (2019), and Mann et al. (2022). Columns: latitude, longitude, depth (km)
 
 * multistaMohodepths_final.txt: the average of Moho depths maps from multiple models that provide the Moho depths at binned grids, including Haney et al. (2020), Mann et al. (2022), and Gama et al. (2022a). Columns: latitude, longitude, depth (km)
 
-### 2.2 Products from velocity model clustering analysis.
+### 2.2 vmodel_clustering: this folder contains the results from velocity model clustering analysis.
 
 * edges_allmodels_samegrid.pk: This is a Python pickle file containing the detected boundaries from the velocity clusters of eight shear-wave velocity models, including Ward and Lin (2018), Jiang et al. (2018), Martin-Short et al. (2018), Feng and Ritzwoller (2019), Berg et al. (2020), Yang and Gao (2020), Nayak et al. (2020), and Gama et al. (2022b). The data is stored in one dictionary that can be loaded as:
 
@@ -31,14 +31,14 @@ for d in depth_labels:
         grad=edges['data'][e] #gradient data/matrix (2d) for each velocity model.
 ```
 
-* boundary_crust.txt and boundary_mantle.txt: manually picked key structural lineaments (for crust and mantle) from the cluster boundaries with more than 3 votes (more than 3 velocit models have detected the boundaries). The file is good for GMT line plots in longitude and latitude order for each line segments.
+* cluster_boundary_minvote3_crust.txt and cluster_boundary_minvote3_mantle.txt: manually picked key structural lineaments (for crust and mantle) from the cluster boundaries with more than 3 votes (more than 3 velocit models have detected the boundaries). The file is good for GMT line plots in longitude and latitude order for each line segments.
 
-* outlines_crust.txt and outlines_mantle.txt: manually picked key structural domains (for crust and mantle) outlined by the cluster boundary lineaments. The file is good for GMT line plots in longitude and latitude order for each outline/polygon.
+* velocity_domain_outlines_crust.txt and velocity_domain_outlines.txt: manually picked key structural domains (for crust and mantle) outlined by the cluster boundary lineaments. The file is good for GMT line plots in longitude and latitude order for each outline/polygon.
 
 * plots_domains.ipynb: Jupyter notebook to plot the key structural domains and boundaries. This notebook needs some utility functions (read GMT lines) from *SeisGo*, which can be installed with ```pip install seisgo```. See https://github.com/xtyangpsp/SeisGo.git for detailed instruction/introduction of *SeisGo*. It also needs *Cartopy* and *MATPLOTLIB* packages.
 
 ### 2.3 Major faults and terrane boundaries.
-These files are from Colpron et al. (2007), downloaded from Yukon Geological Survey (https://data.geology.gov.yk.ca/Compilation/2#InfoTab).
+The folder "faults_terranes" contains faults and terrane boundaries simplied from from Colpron et al. (2007), downloaded from Yukon Geological Survey (https://data.geology.gov.yk.ca/Compilation/2#InfoTab).
 
 ## 3. Key references:
 * Ai, Y., Zhao, D., Gao, X., &#38; Xu, W. (2005). The crust and upper mantle discontinuity structure beneath Alaska inferred from receiver functions. Physics of the Earth and Planetary Interiors, 150(4), 339–350. https://doi.org/10.1016/j.pepi.2004.12.002
