@@ -10,9 +10,10 @@ The folder "summary_supplement_file" contains the summary file "AlaskaSynthesis_
 
 ### 2.1 crustal_thicknesses: this folder contains the average crustal thickness using single station measures and multi-station measurements.
 
-* singlestaMohodepths_final.txt: the average of Moho depths from multiple models that provide single station measurements, including Ai et al. (2005), Rossi et al. (2006), Miller et al. (2018), Zhang et al. (2019), and Mann et al. (2022). Columns: latitude, longitude, depth (km)
-
-* multistaMohodepths_final.txt: the average of Moho depths maps from multiple models that provide the Moho depths at binned grids, including Haney et al. (2020), Mann et al. (2022), and Gama et al. (2022a). Columns: latitude, longitude, depth (km)
+* SingleStation_Mohodepths_final_nouncertainty.txt: the average of Moho depths from multiple models that provide single station measurements, including Veenstra et al. (2006), Rossi et al. (2006), Miller et al. (2018), Zhang et al. (2019), and Mann et al. (2022). Columns: latitude, longitude, depth (km)
+* SingleStation_Mohodepths_final_withcertainty.txt: the average of Moho depths from multiple models with uncertainties considered in averaging. Columns: latitude, longitude, depth (km), std (km)
+* MultiStation_Mohodepths_final_nouncertainty.txt: the average of Moho depths maps from multiple models that provide the Moho depths at binned grids, including Haney et al. (2020), Mann et al. (2022), and Gama et al. (2022a). Columns: latitude, longitude, depth (km)
+* MultiStation_Mohodepths_final_withuncertainty.txt: the average of Moho depths maps from multiple models that provide the Moho depths at binned grids, with uncertainties considered in averaging. Columns: latitude, longitude, depth (km), std (km)
 
 ### 2.2 vmodel_clustering: this folder contains the results from velocity model clustering analysis.
 
@@ -41,7 +42,7 @@ for d in depth_labels:
 The folder "faults_terranes" contains faults and terrane boundaries simplied from from Colpron et al. (2007), downloaded from Yukon Geological Survey (https://data.geology.gov.yk.ca/Compilation/2#InfoTab).
 
 ## 3. Key references:
-* Ai, Y., Zhao, D., Gao, X., &#38; Xu, W. (2005). The crust and upper mantle discontinuity structure beneath Alaska inferred from receiver functions. Physics of the Earth and Planetary Interiors, 150(4), 339–350. https://doi.org/10.1016/j.pepi.2004.12.002
+* Veenstra, E., Christensen, D. H., Abers, G. A., & Ferris, A. (2006). Crustal thickness variation in south-central Alaska. Geology, 34(9), 781–784. https://doi.org/10.1130/G22615.1
 
 * Berg, E. M., Lin, F. C., Allam, A., Schulte-Pelkum, V., Ward, K. M., & Shen, W. (2020). Shear velocity model of Alaska via joint inversion of rayleigh wave ellipticity, phase velocities, and receiver functions across the Alaska transportable array. Journal of Geophysical Research: Solid Earth, 125 , e2019JB018582. 
 
